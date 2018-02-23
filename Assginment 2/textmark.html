@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+//  window.onload = alert(localStorage.getItem("score"));
+var a;
+function check()
+{
+	//alert(document.getElementById("two").checked);
+a=document.getElementById("two").checked;
+b=document.getElementById("two2").checked
+
+if(a==true && b==true)	
+{
+  localStorage.setItem("third",1);
+}
+else
+{
+ localStorage.setItem("third",0);
+}
+  
+  };
+
+</script>
+<style type="text/css">
+	header {background-color: LightGrey}
+
+.box{
+	width: 172px;
+    border: 1px solid black;
+    border-radius: 9px;
+    
+    height: 17px;
+    margin: 1%;
+    float: left;
+    padding: 16px; 
+}
+.allbox{
+	display: inline-block;
+}
+
+</style>
+</head>
+<body>
+<header>
+  <b style="margin-left: 570px;">Question 3</b><hr/>
+</header>
+</br>
+<div class="left">
+As per the latest twitter news, complete the article snippet given by
+<div>selecting appropriate choices for the blanks</div>
+</br></br></br>
+ <form>
+  <input type="radio" id="one"> Option 1 Mark 1: $650<br>
+ </br>
+  <input type="radio" id="two"> Option 2 Mark 1: $550<br>
+  </br>
+  <input type="radio" id="three"> Option 3 Mark 1: $750
+</form>
+<div clas="leftradio" style="    margin-left: 267px;
+    margin-top: -93px;"> 
+  <input type="radio" id="one2"> Option 1 Mark 1: Twitter<br>
+ </br>
+  <input type="radio" id="two2"> Option 2 Mark 2: Google<br>
+  </br>
+  <input type="radio" id="three2"> Option 3 Mark 3: Facebook
+</div>
+
+</div>
+<div class="right" style="margin-left: 545px;
+    margin-top: -180px;">
+"</br>
+Twitter wants more cash.The company announced two</br>
+ <div><mark>&#36;_______</mark> <span>million debt offerings in a filling today,each with a</span></div>
+ potential $100 increase provided that the sales are</br>
+ oversubscribed. Assuming full tip, including the $100 million</br>
+ boosters<mark>________</mark>will rise up to $1.5 billion with the two</br>
+ offerings.
+ </br>
+ </br>
+ "
+</div>
+<div class="allbo">
+<div class="box" style="margin-top: 69px" onclick="check()">
+  <span class="text" onclick="location.href = 'videosco.html';">Submit  &amp;Next Question</span>
+</div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<div class="box" style="margin-top: 69px;margin-left: 60px">
+  <span class="text">Cancel &amp; clear selection</span>
+</div>
+</div>
+</body>
+</html>
