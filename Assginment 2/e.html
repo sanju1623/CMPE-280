@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+var score=0;
+function check()
+{
+alert("asd");
+
+score++;
+   localStorage.setItem("score",score);
+};
+function uncheck()
+{
+score=0;
+   localStorage.setItem("score",score);	
+};
+
+</script>
+
+<style>
+header {background-color: LightGrey}
+div.rightdiv{
+	margin-left: 555px;
+	margin-top: 1px;
+    display: inline-block;
+}
+div.leftdiv{
+	padding-right: 555px;
+    display: inline-block;
+}
+span.dot {
+    height: 25px;
+    width: 25px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 50%;
+    display: inline-block;
+}
+span.dot1 {
+    height: 5px;
+    width: 5px;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+margin-left: 9px;
+}
+.first{
+	margin-top: -224px;
+    margin-left: -515px;
+}
+.box{
+	width: 172px;
+    border: 1px solid black;
+    border-radius: 9px;
+    
+    height: 17px;
+    margin: 1%;
+    float: left;
+    padding: 16px; 
+}
+.allbox{
+	display: inline-block;
+}
+.empty{
+	height: 109px;
+	width: 15px;
+}
+</style>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=MML_HTMLorMML"></script>
+</head>
+<body >
+<header>
+  <b style="margin-left: 255px;">Question 1</b>
+<hr/>
+</header>
+</br>
+
+<div class="leftdiv">
+Given points (x1,y1) and (x2,y2) select the formula to find the equation of<div>the given line.</div>
+<div class="empty"></div>
+<span class="dot" onclick="uncheck()"><span class="dot1"></span></span>
+&nbsp;&nbsp;&nbsp;&nbsp;<math>
+<mi>y</mi>&nbsp;
+<mo>=</mo>
+<mi>m</mi>
+<mi>x</mi>
+<mo>+</mo>
+<mi>b</mi>
+<span class="dot" onclick="uncheck()" style="margin-left: 156px;"><span class="dot1"></span></span>
+&nbsp;&nbsp;&nbsp;&nbsp;<math>
+
+<msup>
+<mrow>
+  <mo>(</mo>
+     <mi>x</mi>
+     <mo>-</mo>
+     <mi>h</mi>
+  <mo>)</mo>
+</mrow>
+<mn>2</mn>
+</msup>
+
+<mo>+</mo>
+<msup>
+<mrow>
+  <mo>(</mo>
+     <mi>y</mi>
+     <mo>-</mo>
+     <mi>k</mi>
+  <mo>)</mo>
+</mrow>
+<mn>2</mn>
+</msup>
+<mo>=</mo>
+<msup>
+	<mi>r</mi>
+	<mn>2</mn>
+</msup>
+</math>
+<div class="empty" style="height: 50px"></div>
+<span class="dot" onclick="uncheck()"><span class="dot1"></span></span>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<math>
+<mrow>
+<mi>y</mi>
+<mo>-</mo>
+<msub>
+<mi>y</mi>
+<mn>1</mn>
+</msub>	
+</mrow>
+<mo>=</mo>
+<mrow> <mi>m</mi><mo>(</mo><mi>x</mi><mo>-</mo><msub><mi>x</mi><mn>1</mn></msub><mo>)</mo>  </mrow>
+</math>
+<span class="dot" onclick="check()" style="margin-left: 92px;"><span class="dot1"></span></span>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<math>
+<mrow>
+ <mrow>
+  <mi>y</mi>
+  <mo>-</mo>
+  <msub>
+  <mi>y</mi>
+  <mn>2</mn>
+  </msub> 	
+ </mrow>
+<mo>=</mo>
+
+
+<mrow>
+  
+  <mfrac>
+  <mrow><msub><mi>y</mi><mn>2</mn></msub><mo>-</mo><msub><mi>y</mi><mn>1</mn></msub></mrow> 
+  <mrow><msub><mi>x</mi><mn>2</mn></msub><mo>-</mo><msub><mi>x</mi><mn>1</mn></msub></mrow> 
+  </mfrac>
+<mo>(</mo>
+<mi>x</mi>
+  <mo>-</mo>
+  <msub>
+  <mi>x</mi>
+  <mn>2</mn>
+  </msub>
+<mo>)</mo>
+</mrow>
+
+</math>
+</div>
+</br>
+<div class="allbo">
+<div class="box" style="margin-top: 37px">
+	<span class="text" onclick="location.href = 'cosine.html';">Submit  &amp; Question</span>
+</div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<div class="box" style="margin-top: 37px;margin-left: 94px">
+	<span class="text">Cancel &amp; clear selection</span>
+</div>
+</button>
+</div>
+
+<div class="rightdiv">
+<img class="first" src="C:\sanjay\Spring 18\280\images\first.JPG" >
+</div>
+</body>
+</html>

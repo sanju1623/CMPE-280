@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+header {background-color: LightGrey}
+.finishbox{
+  width: 172px;
+    border: 1px solid black;
+    border-radius: 9px;
+    
+    height: 17px;
+    margin: 1%;
+    float: left;
+    padding: 16px; 
+}
+.box{
+	width: 1247px;
+    border: 1px solid black;
+    border-radius: 9px;
+    height: 384px;
+    margin: 1%;
+    float: left;
+    padding: 16px; 
+}
+.allbox{
+	display: inline-block;
+}
+.empty{
+	height: 109px;
+	width: 15px;
+}
+</style>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=MML_HTMLorMML"></script>
+</head>
+<body>
+<header>
+  <b style="margin-left: 547px;">Score card</b>
+<hr/>
+</header>
+</br>
+<div class="allbo">
+<div class="box" style="margin-top: 5px">
+
+<details>
+  <summary>Quantitave Section</summary>
+  <p>Number of Questions Answered :2</p>
+  <p>Number of Correct Answers :</p><p id="quant"></p>
+  <p>Score:<p id="score1"></p> </p>
+</details>
+<details>
+  <summary>Reading Section</summary>
+  <p>Number of Questions Answered :1</p>
+  <p>Number of Correct Answers :<p id="reading"></p></p>
+  <p>Score: <p id="score2"></p></p>
+</details>
+
+<details>
+  <summary>Audio/video Section</summary>
+  <p>Number of Questions Answered :1</p>
+  <p>Number of Correct Answers :<p id="audio"></p></p>
+  <p>Score: <p id="score3"></p></p>
+</details>
+</div>
+<footer>
+	<b style="margin-left: 547px;">Thank You !!</b>
+</footer>
+</div>
+<div class="finishbox" style="margin-top: 37px;margin-left: 491px">
+  <span class="text" style="margin-left: 63px" >Finish</span>
+</div>
+</body>
+
+
+<script type="text/javascript">
+
+var first=localStorage.getItem("first");
+var second=localStorage.getItem("second");
+//alert(localStorage.getItem("first"));
+//alert(localStorage.getItem("second"));
+if(first==1 && second==1)
+{
+document.getElementById("quant").innerHTML = 2;
+document.getElementById("score1").innerHTML = 200;
+
+}
+else if(first==0 && second==0)
+{
+document.getElementById("quant").innerHTML = 0;
+document.getElementById("score1").innerHTML = 0;
+
+}
+else
+{
+	document.getElementById("quant").innerHTML = 1;
+document.getElementById("score1").innerHTML = 100;
+}
+var s=localStorage.getItem("third");
+
+if(s==1)
+{
+	document.getElementById("score2").innerHTML = 100;
+document.getElementById("reading").innerHTML=1;	
+}	
+else
+{
+	document.getElementById("score2").innerHTML = 0;	
+    document.getElementById("reading").innerHTML=0;
+}
+var f=localStorage.getItem("fourth");;
+if(f==1)
+{
+	document.getElementById("score3").innerHTML = 100;
+document.getElementById("audio").innerHTML=1;	
+
+}	
+else
+{
+	document.getElementById("score3").innerHTML = 0;	
+document.getElementById("audio").innerHTML=0;	
+
+}
+localStorage.clear();
+</script>
+
+</html>

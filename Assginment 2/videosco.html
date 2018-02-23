@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script type="text/javascript">
+  
+function check()
+{
+   //localStorage.setItem("fourth",1);
+//alert("asd");
+//alert(owl.getAttribute("data-animal-type"));
+  localStorage.setItem("fourth",1);
+
+};
+function uncheck()
+{
+  localStorage.setItem("fourth",0);
+};
+</script>
+
+<style>
+header {background-color: LightGrey}
+div.rightdiv{
+	    margin-left: 580px;
+    margin-top: -352px;
+    display: inline-block;
+}
+div.leftdiv{
+	padding-right: 555px;
+    display: inline-block;
+}
+span.dot {
+    height: 25px;
+    width: 25px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 50%;
+    display: inline-block;
+}
+span.dot1 {
+    height: 5px;
+    width: 5px;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+margin-left: 9px;
+}
+.first{
+	margin-top: -224px;
+    margin-left: -515px;
+}
+
+.box{
+	width: 172px;
+    border: 1px solid black;
+    border-radius: 9px;
+    
+    height: 17px;
+    margin: 1%;
+    float: left;
+    padding: 16px; 
+}
+.allbox{
+	display: inline-block;
+}
+.empty{
+	height: 109px;
+	width: 15px;
+}
+</style>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=MML_HTMLorMML"></script>
+</head>
+<body >
+<header>
+  <b style="margin-left: 255px;">Question 4</b>
+<hr/>
+</header>
+</br>
+
+
+<div class="leftdiv">
+watch the video and answer the following question</br>
+What is the source as mentioned int the video?
+<div class="empty"></div>
+<span class="dot" onclick="check()"><span class="dot1"></span></span>
+&nbsp;&nbsp;&nbsp;&nbsp;
+NASA.Gov
+<span class="dot" style="margin-left: 156px;"><span class="dot1"></span></span>
+&nbsp;&nbsp;&nbsp;&nbsp;
+Data.Gov
+<div class="empty" style="height: 50px"></div>
+<span class="dot" 	><span class="dot1"></span></span>
+&nbsp;&nbsp;&nbsp;&nbsp;
+Facebook
+<span class="dot" style="margin-left: 167px;"><span class="dot1"></span></span>
+&nbsp;&nbsp;&nbsp;&nbsp;
+XYZ.net
+</div>
+</br>
+<div class="allbo">
+<div class="box" style="margin-top: 37px" onclick="check()">
+  <span class="text" onclick="location.href = 'summary.html';">Submit  &amp; Question</span>
+</div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<div class="box" style="margin-top: 37px;margin-left: 94px">
+  <span class="text">Cancel &amp; clear selection</span>
+</div>
+</div>
+<div class="rightdiv">
+<iframe width="420" height="345" src="https://www.youtube.com/embed/fkWrjrdT3Zg">
+</iframe>
+
+</div>
+</body>
+</html>
